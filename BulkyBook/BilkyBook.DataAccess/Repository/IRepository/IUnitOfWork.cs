@@ -8,5 +8,6 @@ namespace BulkyBook.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
         IStoreProcedureCall StoreProcedureCall { get; }
+        void Save();
     }
 }

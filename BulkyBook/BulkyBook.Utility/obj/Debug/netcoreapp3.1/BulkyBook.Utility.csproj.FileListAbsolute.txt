@@ -6,4 +6,3 @@ E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Uti
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Debug\netcoreapp3.1\BulkyBook.Utility.AssemblyInfo.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Debug\netcoreapp3.1\BulkyBook.Utility.dll
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Debug\netcoreapp3.1\BulkyBook.Utility.pdb
-E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Debug\netcoreapp3.1\BulkyBook.Utility.csprojAssemblyReference.cache
