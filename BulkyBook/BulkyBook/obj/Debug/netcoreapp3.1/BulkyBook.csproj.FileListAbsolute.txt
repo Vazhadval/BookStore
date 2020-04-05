@@ -164,3 +164,4 @@ E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\_ViewStart.cshtml.g.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\bin\Debug\netcoreapp3.1\Dapper.dll

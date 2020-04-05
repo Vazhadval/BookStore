@@ -4,7 +4,6 @@ E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.Dat
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Debug\netcoreapp3.1\BulkyBook.DataAccess.AssemblyInfoInputs.cache
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Debug\netcoreapp3.1\BulkyBook.DataAccess.AssemblyInfo.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Debug\netcoreapp3.1\BulkyBook.DataAccess.pdb
-E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Debug\netcoreapp3.1\BulkyBook.DataAccess.csproj.CoreCompileInputs.cache
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Debug\netcoreapp3.1\BulkyBook.DataAccess.dll
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Debug\netcoreapp3.1\BulkyBook.DataAccess.pdb
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Debug\netcoreapp3.1\BulkyBook.Models.dll
@@ -12,3 +11,4 @@ E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.Dat
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Debug\netcoreapp3.1\BulkyBook.Models.pdb
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Debug\netcoreapp3.1\BulkyBook.Utility.pdb
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Debug\netcoreapp3.1\BulkyBook.DataAccess.csproj.CopyComplete
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Debug\netcoreapp3.1\BulkyBook.DataAccess.csproj.CoreCompileInputs.cache
