@@ -1,0 +1,8 @@
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\bin\Debug\netcoreapp3.1\BulkyBook.Models.deps.json
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\bin\Debug\netcoreapp3.1\BulkyBook.Models.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\bin\Debug\netcoreapp3.1\BulkyBook.Models.pdb
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\netcoreapp3.1\BulkyBook.Models.csproj.CoreCompileInputs.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\netcoreapp3.1\BulkyBook.Models.AssemblyInfoInputs.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\netcoreapp3.1\BulkyBook.Models.AssemblyInfo.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\netcoreapp3.1\BulkyBook.Models.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\netcoreapp3.1\BulkyBook.Models.pdb
