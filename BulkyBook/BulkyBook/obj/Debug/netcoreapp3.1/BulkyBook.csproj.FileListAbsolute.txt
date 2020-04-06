@@ -189,3 +189,5 @@ E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Upsert.cshtml.g.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateAndBackToListButton.cshtml.g.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_EditAndBackToListButton.cshtml.g.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\CoverType\Index.cshtml.g.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\CoverType\Upsert.cshtml.g.cs
