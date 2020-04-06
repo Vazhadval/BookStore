@@ -80,17 +80,17 @@ namespace BulkyBook.DataAccess.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("ListPrice")
-                        .HasColumnType("float");
+                    b.Property<decimal>("ListPrice")
+                        .HasColumnType("money");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("money");
 
-                    b.Property<double>("Price100")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price100")
+                        .HasColumnType("money");
 
-                    b.Property<double>("Price50")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price50")
+                        .HasColumnType("money");
 
                     b.Property<string>("Title")
                         .IsRequired()

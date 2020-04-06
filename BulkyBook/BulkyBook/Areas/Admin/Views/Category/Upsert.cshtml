@@ -6,7 +6,7 @@
 
 <form method="post">
     <div class="row p-3">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div asp-validation-summary="ModelOnly" class="text-warning"></div>
         @if (Model.Id != 0)
         {
             title = "Edit Category";
@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-8">
                     <input type="text" asp-for="Name" class="form-control" />
-                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <span asp-validation-for="Name" class="text-warning"></span>
                 </div>
             </div>
             <div class="form-group row">

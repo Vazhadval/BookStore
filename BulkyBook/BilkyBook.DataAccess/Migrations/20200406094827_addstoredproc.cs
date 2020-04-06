@@ -21,7 +21,7 @@ namespace BulkyBook.DataAccess.Migrations
 
             migrationBuilder.Sql(@"CREATE PROC usp_UpdateCoverType
 									@Id int,
-									@Name varchar(100)
+									@Name nvarchar(100)
 									AS 
 									BEGIN 
 									 UPDATE dbo.CoverTypes
@@ -38,7 +38,7 @@ namespace BulkyBook.DataAccess.Migrations
 									END");
 
             migrationBuilder.Sql(@"CREATE PROC usp_CreateCoverType
-								   @Name varchar(100)
+								   @Name nvarchar(100)
 								   AS 
 								   BEGIN 
 									INSERT INTO dbo.CoverTypes(Name)
