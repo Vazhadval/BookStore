@@ -17,21 +17,16 @@ namespace BulkyBook.Models
         public string ISBN { get; set; }
         [Required]
         public string Author { get; set; }
-        [Required]
         [Column(TypeName = "money")]
-        [Range(1, 999.99)]
         public double ListPrice { get; set; }
         [Required]
         [Column(TypeName = "money")]
-        [Range(1, 999.99)]
         public double Price { get; set; }
         [Required]
         [Column(TypeName = "money")]
-        [Range(1, 999.99)]
         public double Price50 { get; set; }
         [Required]
         [Column(TypeName = "money")]
-        [Range(1, 999.99)]
         public double Price100 { get; set; }
         public string ImageUrl { get; set; }
         [Required]
