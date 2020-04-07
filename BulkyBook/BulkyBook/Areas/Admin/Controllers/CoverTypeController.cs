@@ -35,7 +35,7 @@ namespace BulkyBook.Areas.Admin.Controllers
 
             var parameter = new DynamicParameters();
             parameter.Add("@Id", id);
-            coverType = _unitOfWork.StoreProcedureCall.OneRecord<CoverType>(StaticDetails.Proc_CoverType_Get, parameter);
+            coverType = _unitOfWork.StoreProcedureCall.OneRecord<CoverType>(Constants.Proc_CoverType_Get, parameter);
 
             if (coverType == null)
             {
@@ -55,12 +55,12 @@ namespace BulkyBook.Areas.Admin.Controllers
                 parameter.Add("@Name", coverType.Name);
                 if (coverType.Id == 0)
                 {
-                    _unitOfWork.StoreProcedureCall.Execute(StaticDetails.Proc_CoverType_Create, parameter);
+                    _unitOfWork.StoreProcedureCall.Execute(Constants.Proc_CoverType_Create, parameter);
                 }
                 else
                 {
                     parameter.Add("@Id", coverType.Id);
-                    _unitOfWork.StoreProcedureCall.Execute(StaticDetails.Proc_CoverType_Update, parameter);
+                    _unitOfWork.StoreProcedureCall.Execute(Constants.Proc_CoverType_Update, parameter);
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
@@ -73,7 +73,7 @@ namespace BulkyBook.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.StoreProcedureCall.List<CoverType>(StaticDetails.Proc_CoverType_GetAll, null);
+            var allObj = _unitOfWork.StoreProcedureCall.List<CoverType>(Constants.Proc_CoverType_GetAll, null);
             return Json(new { data = allObj });
         }
 
@@ -82,12 +82,12 @@ namespace BulkyBook.Areas.Admin.Controllers
         {
             var parameter = new DynamicParameters();
             parameter.Add("@Id", id);
-            var objFromDb = _unitOfWork.StoreProcedureCall.OneRecord<CoverType>(StaticDetails.Proc_CoverType_Get, parameter);
+            var objFromDb = _unitOfWork.StoreProcedureCall.OneRecord<CoverType>(Constants.Proc_CoverType_Get, parameter);
             if (objFromDb == null)
             {
                 return Json(new { success = false, message = "Error while deleting" });
             }
-            _unitOfWork.StoreProcedureCall.Execute(StaticDetails.Proc_CoverType_Delete, parameter);
+            _unitOfWork.StoreProcedureCall.Execute(Constants.Proc_CoverType_Delete, parameter);
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
         }

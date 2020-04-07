@@ -18,6 +18,7 @@ namespace BulkyBook.DataAccess.Repository
             StoreProcedureCall = new StoreProcedureCall(_context);
             Product = new ProductRepository(_context);
             Company = new CompanyRepository(_context);
+            ApplicationUser = new ApplicationUserRepository(_context);
         }
 
         public ICategoryRepository Category { get; private set; }
@@ -26,6 +27,7 @@ namespace BulkyBook.DataAccess.Repository
 
         public IProductRepository Product { get; private set; }
         public ICompanyRepository Company { get; private set; }
+        public IApplicationUserRepository ApplicationUser { get; set; }
 
         public void Dispose()
         {
