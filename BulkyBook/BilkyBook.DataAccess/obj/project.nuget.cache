@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q1/kGyaLuW0CMPVrdbo+OaNTpRUT8e8UX4zYqPQUaizNIaTrZNMSDHzGOqD1T2uwHz++ys3bXxtnUHK6L5XbwQ==",
+  "dgSpecHash": "5kSLPNLoqBV78Pky21cCBgxf19UUd3IS9mRtxjH64VXGTwFfsG274k2x/vkI/XACGvYqJ3jBjlcWKAyIft2c0g==",
   "success": true,
   "projectFilePath": "E:\\Projects\\C# Projects\\Udemy .net core course\\BookStore\\BulkyBook\\BilkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
   "expectedPackageFiles": [

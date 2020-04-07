@@ -1,0 +1,125 @@
+﻿@model Company
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var title = "Create Company";
+}
+
+<form method="post">
+    <div class="row p-3">
+        <div asp-validation-summary="ModelOnly" class="text-warning"></div>
+        @if (Model.Id != 0)
+        {
+            title = "Edit Company";
+            <input type="hidden" asp-for="Id" />
+        }
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@title</h2>
+        </div>
+        <div class="col-8 pt-4">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Name"></label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-warning"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="StreetAddress"></label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="StreetAddress" class="form-control" />
+                    <span asp-validation-for="StreetAddress" class="text-warning"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="City"></label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-warning"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="State"></label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="State" class="form-control" />
+                    <span asp-validation-for="State" class="text-warning"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="PostalCode"></label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="PostalCode" class="form-control" />
+                    <span asp-validation-for="PostalCode" class="text-warning"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="PhoneNumber"></label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-warning"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="IsAuthorizedCompany"></label>
+                </div>
+                <div class="col-8">
+                    <input type="checkbox" asp-for="IsAuthorizedCompany" class="form-control" />
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    @if (Model.Id != 0)
+                    {
+                        <partial name="_EditAndBackToListButton" model="Model.Id" />
+                    }
+                    else
+                    {
+
+                        <partial name="_CreateAndBackToListButton" />
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/customValidation.js"></script>
+    <script src="https://cdn.tiny.cloud/1/klwghzhd4j3w24egpvvr7knxafsldm7dm4hxry7bx50cowxr/tinymce/5/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'lists',
+            menubar: 'file edit format'
+        });
+
+
+        function validateInput() {
+            if (document.getElementById("uploadBox").value == "") {
+                swal("Error", "Please select an image", "error");
+                return false;
+            }
+            return true;
+        }
+    </script>
+}
+
