@@ -16,6 +16,7 @@ using BulkyBook.DataAccess.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using BulkyBook.Utility;
 using BulkyBook.Data;
+using System.Globalization;
 
 namespace BulkyBook
 {
@@ -63,6 +64,13 @@ namespace BulkyBook
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var cultureInfo = new CultureInfo("en-US");
+            cultureInfo.NumberFormat.NumberGroupSeparator = ".";
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
