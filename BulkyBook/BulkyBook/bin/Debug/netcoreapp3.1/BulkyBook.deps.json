@@ -27,6 +27,8 @@
           "BulkyBook.DataAccess": "1.0.0",
           "BulkyBook.Models": "1.0.0",
           "BulkyBook.Utility": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Facebook": "3.1.3",
+          "Microsoft.AspNetCore.Authentication.Google": "3.1.3",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.3",
           "Microsoft.AspNetCore.Identity.UI": "3.1.3",
@@ -333,6 +335,28 @@
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Facebook/3.1.3": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.16314"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Facebook.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/3.1.3": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.16314"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
@@ -1617,6 +1641,20 @@
           }
         }
       },
+      "SendGrid/9.13.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SendGrid.dll": {
+            "assemblyVersion": "9.13.2.0",
+            "fileVersion": "9.13.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/SendGrid.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.0.2",
@@ -2691,7 +2729,8 @@
       },
       "BulkyBook.Utility/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.UI": "3.1.3"
+          "Microsoft.AspNetCore.Identity.UI": "3.1.3",
+          "SendGrid": "9.13.2"
         },
         "runtime": {
           "BulkyBook.Utility.dll": {}
@@ -4272,6 +4311,20 @@
       "path": "microsoft.aspnetcore.authentication.core/2.2.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authentication.Facebook/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2WEElyYsbxybqZRR922UAgRszWl+LjZCHxKD8/xga90a/yjWQzmKhj2LgIUlnR870AU4jjb5nFfg9pRZZV1nTA==",
+      "path": "microsoft.aspnetcore.authentication.facebook/3.1.3",
+      "hashPath": "microsoft.aspnetcore.authentication.facebook.3.1.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HN3FleO3t/pzF/1TJppknwB7qqnqCfGmqQybYEzYd6kv2u9VbN8+bVLf4lE2AskuykuDziCzmyKqK6vhpjT7Fw==",
+      "path": "microsoft.aspnetcore.authentication.google/3.1.3",
+      "hashPath": "microsoft.aspnetcore.authentication.google.3.1.3.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -5041,6 +5094,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SendGrid/9.13.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wtdeav+dxC9jGEH0NQxT8IEEs39OEvyN4MS05eLyGXo6Uors7syA/SghrLZUcAnXjRHN0ay25Z2UgI/KFlxTZQ==",
+      "path": "sendgrid/9.13.2",
+      "hashPath": "sendgrid.9.13.2.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
       "type": "package",

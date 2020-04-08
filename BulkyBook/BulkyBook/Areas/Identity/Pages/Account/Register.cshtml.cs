@@ -46,7 +46,6 @@ namespace BulkyBook.Areas.Identity.Pages.Account
             _unitOfWork = unitOfWork;
         }
 
-
         [BindProperty]
         public InputModel Input { get; set; }
 
@@ -71,6 +70,7 @@ namespace BulkyBook.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
             [Required]
             public string Name { get; set; }
             public string StreetAddress { get; set; }
@@ -80,6 +80,7 @@ namespace BulkyBook.Areas.Identity.Pages.Account
             public string PhoneNumber { get; set; }
             public int? CompanyId { get; set; }
             public string Role { get; set; }
+
             public IEnumerable<SelectListItem> CompanyList { get; set; }
             public IEnumerable<SelectListItem> RoleList { get; set; }
 
@@ -103,7 +104,6 @@ namespace BulkyBook.Areas.Identity.Pages.Account
                 })
             };
 
-
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
@@ -116,6 +116,7 @@ namespace BulkyBook.Areas.Identity.Pages.Account
                 var user = new ApplicationUser
                 {
                     UserName = Input.Email,
+                    Email = Input.Email,
                     CompanyId = Input.CompanyId,
                     StreetAddress = Input.StreetAddress,
                     City = Input.City,
@@ -125,7 +126,6 @@ namespace BulkyBook.Areas.Identity.Pages.Account
                     PhoneNumber = Input.PhoneNumber,
                     Role = Input.Role
                 };
-
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
@@ -147,6 +147,7 @@ namespace BulkyBook.Areas.Identity.Pages.Account
                     {
                         await _roleManager.CreateAsync(new IdentityRole(Constants.Role_User_Indi));
                     }
+
                     if (user.Role == null)
                     {
                         await _userManager.AddToRoleAsync(user, Constants.Role_User_Indi);
@@ -157,21 +158,19 @@ namespace BulkyBook.Areas.Identity.Pages.Account
                         {
                             await _userManager.AddToRoleAsync(user, Constants.Role_User_Comp);
                         }
-
                         await _userManager.AddToRoleAsync(user, user.Role);
                     }
 
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                    var callbackUrl = Url.Page(
+                        "/Account/ConfirmEmail",
+                        pageHandler: null,
+                        values: new { area = "Identity", userId = user.Id, code = code },
+                        protocol: Request.Scheme);
 
-                    //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    //code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    //var callbackUrl = Url.Page(
-                    //    "/Account/ConfirmEmail",
-                    //    pageHandler: null,
-                    //    values: new { area = "Identity", userId = user.Id, code = code },
-                    //    protocol: Request.Scheme);
-
-                    //await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                    //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
+                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
@@ -189,7 +188,6 @@ namespace BulkyBook.Areas.Identity.Pages.Account
                             //admin is registering a new user
                             return RedirectToAction("Index", "User", new { Area = "Admin" });
                         }
-
                     }
                 }
                 foreach (var error in result.Errors)

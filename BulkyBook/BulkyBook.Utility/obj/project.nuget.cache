@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IIzAGcVH1MJRra7Z66SvCaxEQ5MP+C7ivuYAd1c94LdLtsU6XnJYrpexfK76p2vx8UJOvrd0UgkRZrY2Y4/kdg==",
+  "dgSpecHash": "zAKkuvxe2FGC9o0wDP+Mkkq1DcZktCPMau1ZfnyVgJOuGAEzeHzj4bPg+otNg5UhdR9DeZ4g7jxL1yDemvvr0A==",
   "success": true,
   "projectFilePath": "E:\\Projects\\C# Projects\\Udemy .net core course\\BookStore\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,8 @@
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+    "C:\\Users\\pc\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\sendgrid\\9.13.2\\sendgrid.9.13.2.nupkg.sha512"
   ],
   "logs": []
 }

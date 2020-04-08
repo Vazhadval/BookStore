@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DCZMljl70jo0COA0RaikmSQf/I1qKyMx1Z5kNprpKXr6yR27FMA4Pcl6o4c+MRU3Ta0C1j1msem/cziuPNuDLw==",
+  "dgSpecHash": "zkJF0yAg26VgXTwTUc0cwJ16h92xxOsqbL4d+HgOJyrKB8vGVw88lqZO0XNn7GdgKmBkT09gE51L7m75fuoDjw==",
   "success": true,
   "projectFilePath": "E:\\Projects\\C# Projects\\Udemy .net core course\\BookStore\\BulkyBook\\BilkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -94,6 +94,7 @@
     "C:\\Users\\pc\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\sendgrid\\9.13.2\\sendgrid.9.13.2.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
