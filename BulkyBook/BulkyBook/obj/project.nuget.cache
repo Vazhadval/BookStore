@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eSSI6LD8c8400Cn3SuqSLNlB7ySNU20GnOlIvWJdG4LhVUki0i0g/ggnpn4EKaoFSa94YpWC5gph1PQi9sCpGw==",
+  "dgSpecHash": "hyxYjjcJsy0p6TJCCelt6HV09R6rrFVrbT2z0E+K7/mJcvJzwIS3oFjr0EXUgg9fjh3tmIUqE304jc/oIsqj4w==",
   "success": true,
   "projectFilePath": "E:\\Projects\\C# Projects\\Udemy .net core course\\BookStore\\BulkyBook\\BulkyBook\\BulkyBook.csproj",
   "expectedPackageFiles": [
@@ -125,6 +125,7 @@
     "C:\\Users\\pc\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.2\\sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\stripe.net\\35.12.1\\stripe.net.35.12.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

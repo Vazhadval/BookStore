@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using BulkyBook.Utility;
 using BulkyBook.Data;
 using System.Globalization;
+using Stripe;
 
 namespace BulkyBook
 {
@@ -35,24 +36,35 @@ namespace BulkyBook
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddSingleton<IEmailSender, EmailSender>();
+
             services.Configure<EmailOptions>(Configuration);
+
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             services.AddControllersWithViews();
+
             services.AddRazorPages();
+
             services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = $"/Identity/Account/Login";
                 options.LogoutPath = $"/Identity/Account/Logout";
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
+
             services.AddAuthentication().AddFacebook(options =>
             {
                 options.AppId = "479144716347128";
                 options.AppSecret = "8888cefba55e9cfa06a2b28f0495e533";
             });
+
             services.AddAuthentication().AddGoogle(options =>
             {
                 options.ClientId = "751413081977-ct8rrlcf8cgt8f42b5evots13mg458lt.apps.googleusercontent.com";
@@ -94,6 +106,8 @@ namespace BulkyBook
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            StripeConfiguration.ApiKey = Configuration.GetSection("Stripe")["SecretKey"];
 
             app.UseSession();
 
