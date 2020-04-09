@@ -1,11 +1,13 @@
 ﻿
 @using BulkyBook.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] Book Store</title>
+    <title>@ViewData["Title"] Vazha's Store</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
@@ -18,16 +20,14 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" asp-area="Customer" asp-controller="Home" asp-action="Index">Book Store</a>
+                <a class="navbar-brand" asp-area="Customer" asp-controller="Home" asp-action="Index"><i class="fa fa-book" style="color:black;"></i> BookStore</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="navbarColor01">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
+
 
                         @if (User.IsInRole(Constants.Role_Admin))
                         {
@@ -55,7 +55,18 @@
                                 </div>
                             </li>
                         }
-
+                        @if (HttpContextAccessor.HttpContext.Session.GetInt32(Constants.ssShoppingCart) != null)
+                        {
+                            <li style="color:white;">
+                                <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link" style="color:orange;"><i class="fas fa-shopping-cart"></i> &nbsp;(@HttpContextAccessor.HttpContext.Session.GetInt32(Constants.ssShoppingCart))</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li style="color:white;">
+                                <a href="#" class="nav-link" style="color:orange;"><i class="fas fa-shopping-cart"></i> &nbsp;(0)</a>
+                            </li>
+                        }
 
                     </ul>
                 </div>

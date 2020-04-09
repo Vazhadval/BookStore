@@ -32,10 +32,10 @@ function loadDataTable() {
         createdRow: function (row) {
           
             $(row).addClass('bg-dark');
-        }
+            }
 
-    });
-}
+            });
+            }
 
 function Delete(url) {
     swal({

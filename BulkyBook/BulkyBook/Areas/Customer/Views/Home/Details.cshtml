@@ -1,6 +1,6 @@
 ﻿
 @model ShoppingCart
-
+@using BulkyBook.Utility
 <form method="post">
     <input type="hidden" asp-for="@Model.ProductId" />
     <div class="container backgroundWhite">
@@ -55,11 +55,11 @@
                                 </div>
                             </div>
                             <div class="row pl-2">
-                                <p class="pt-3">@Model.Product.Description</p>
+                                <p class="pt-3">@Constants.ConvertHtmlToText(Model.Product.Description)</p>
                             </div>
                             <div class="row pl-2">
                                 <div class="col-2 text-primary"><h4>Count</h4></div>
-                                <div class="col-10"><input class="form-control" /></div>
+                                <div class="col-10"><input class="form-control" asp-for="@Model.Count" /></div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 offset-lg-1 text-center">
