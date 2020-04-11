@@ -27,7 +27,9 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="navbarColor01">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav mr-auto">
-
+                        @*<li class="nav-item">
+                                <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="nav-link">Orders</a>
+                            </li>*@
 
                         @if (User.IsInRole(Constants.Role_Admin))
                         {
@@ -54,7 +56,25 @@
                                     <a class="dropdown-item" asp-area="Admin" asp-controller="User" asp-action="Index">User</a>
                                 </div>
                             </li>
+
                         }
+
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="nav-link">
+                                @if (User.IsInRole(Constants.Role_Employee) || User.IsInRole(Constants.Role_Admin))
+                                {
+                                    <span>Manage Orders</span>
+                                }
+                                else
+                                {
+                                    <span>Order History</span>
+                                }
+                            </a>
+                        </li>
+
+
+
                         @if (HttpContextAccessor.HttpContext.Session.GetInt32(Constants.ssShoppingCart) != null)
                         {
                             <li style="color:white;">

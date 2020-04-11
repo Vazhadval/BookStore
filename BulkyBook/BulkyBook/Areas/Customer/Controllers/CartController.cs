@@ -169,7 +169,7 @@ namespace BulkyBook.Areas.Customer.Controllers
 
         [HttpPost]
         [ActionName("Summary")]
-        [AutoValidateAntiforgeryToken]
+        [ValidateAntiForgeryToken]
         public IActionResult SummaryPost(string stripeToken)
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
@@ -185,7 +185,6 @@ namespace BulkyBook.Areas.Customer.Controllers
             _unitOfWork.OrderHeader.Add(ShoppingCartViewModel.OrderHeader);
             _unitOfWork.Save();
 
-            List<OrderDetails> orderDetailsList = new List<OrderDetails>();
             foreach (var item in ShoppingCartViewModel.ListCart)
             {
                 item.Price = Constants.GetPriceBasedOnQuanitity(item.Count, item.Product.Price, item.Product.Price50, item.Product.Price100);

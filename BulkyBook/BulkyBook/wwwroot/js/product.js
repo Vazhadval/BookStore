@@ -11,6 +11,12 @@ function loadDataTable() {
         "ajax": {
             "url": "/Admin/Product/GetAll"
         },
+        columnDefs: [{
+            targets: [2],
+            render(v) {
+                return Number(v).toFixed(2) + " &#8382;"
+            }
+        }],
         "columns": [
             { "data": "title", "width": "15%" },
             { "data": "isbn", "width": "15%" },

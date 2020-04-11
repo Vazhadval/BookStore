@@ -240,7 +240,9 @@ E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\Summary.cshtml.g.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\bin\Debug\netcoreapp3.1\Stripe.net.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\OrderConfirmation.cshtml.g.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Order\Index.cshtml.g.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Order\Details.cshtml.g.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\BulkyBook.csproj.CoreCompileInputs.cache
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\BulkyBook.MvcApplicationPartsAssemblyInfo.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\BulkyBook.MvcApplicationPartsAssemblyInfo.cache
-E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\OrderConfirmation.cshtml.g.cs
