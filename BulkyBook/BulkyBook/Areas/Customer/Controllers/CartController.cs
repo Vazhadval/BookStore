@@ -14,7 +14,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Options;
 using Stripe;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
 
 namespace BulkyBook.Areas.Customer.Controllers
 {
@@ -25,13 +28,16 @@ namespace BulkyBook.Areas.Customer.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IEmailSender _emailSender;
 
+        private TwilioSettings _twilioOptions { get; set; }
+
         [BindProperty]
         public ShoppingCartViewModel ShoppingCartViewModel { get; set; }
-        public CartController(IUnitOfWork unitOfWork, IEmailSender emailSender, UserManager<IdentityUser> userManager)
+        public CartController(IUnitOfWork unitOfWork, IEmailSender emailSender, UserManager<IdentityUser> userManager, IOptions<TwilioSettings> twilioPtions)
         {
             _userManager = userManager;
             _unitOfWork = unitOfWork;
             _emailSender = emailSender;
+            _twilioOptions = twilioPtions.Value;
 
         }
         public IActionResult Index()
@@ -246,6 +252,23 @@ namespace BulkyBook.Areas.Customer.Controllers
 
         public IActionResult OrderConfirmation(int id)
         {
+            OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == id);
+            TwilioClient.Init(_twilioOptions.AccountSid, _twilioOptions.AuthToken);
+
+            try
+            {
+                var message = MessageResource.Create(
+                        body: "Order Placed on Vazha's book store. Your order ID:" + id,
+                        from: new Twilio.Types.PhoneNumber(_twilioOptions.PhoneNumber),
+                        to: new Twilio.Types.PhoneNumber(orderHeader.PhoneNumber)
+                        );
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
             return View(id);
         }
     }

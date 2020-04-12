@@ -20,6 +20,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="Stripe.net" Version="35.12.1" />
+    <PackageReference Include="Twilio" Version="5.39.0" />
   </ItemGroup>
 
 

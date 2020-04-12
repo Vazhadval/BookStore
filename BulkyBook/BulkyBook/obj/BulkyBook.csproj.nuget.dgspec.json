@@ -296,6 +296,10 @@
             "Stripe.net": {
               "target": "Package",
               "version": "[35.12.1, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[5.39.0, )"
             }
           },
           "imports": [
