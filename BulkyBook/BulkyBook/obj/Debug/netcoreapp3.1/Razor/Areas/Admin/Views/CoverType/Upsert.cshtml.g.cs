@@ -34,7 +34,7 @@ using BulkyBook.Models.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c13b58d240a581ffa3726ee21bf0fe3ec181228e", @"/Areas/Admin/Views/CoverType/Upsert.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"156ccd63bdf864c030191d49d4abd79eefd874c8", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e8404e4c2e5e65ae647af10ed988ea4e3020fad3", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_CoverType_Upsert : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CoverType>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-warning"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

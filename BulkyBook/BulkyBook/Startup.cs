@@ -18,6 +18,7 @@ using BulkyBook.Utility;
 using BulkyBook.Data;
 using System.Globalization;
 using Stripe;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace BulkyBook
 {
@@ -42,9 +43,13 @@ namespace BulkyBook
 
             services.AddSingleton<IEmailSender, EmailSender>();
 
+            services.AddSingleton<ITempDataProvider, CookieTempDataProvider>();
+
             services.Configure<EmailOptions>(Configuration);
 
             services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+
+            services.Configure<TwilioSettings>(Configuration.GetSection("Twilio"));
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -61,14 +66,14 @@ namespace BulkyBook
 
             services.AddAuthentication().AddFacebook(options =>
             {
-                options.AppId = "479144716347128";
-                options.AppSecret = "8888cefba55e9cfa06a2b28f0495e533";
+                options.AppId = "592330314825429";
+                options.AppSecret = "ef0d376e3e7625c24b2f0942d19ae5c1";
             });
 
             services.AddAuthentication().AddGoogle(options =>
             {
-                options.ClientId = "751413081977-ct8rrlcf8cgt8f42b5evots13mg458lt.apps.googleusercontent.com";
-                options.ClientSecret = "LPRLug47n8OQsYAirUVGofLw";
+                options.ClientId = "997442337727-2oh5umbcl126q1qug51ad7a0o9h9flqq.apps.googleusercontent.com";
+                options.ClientSecret = "M2Azp4u7TMlnO5y6fzd9pBVJ";
 
             });
 

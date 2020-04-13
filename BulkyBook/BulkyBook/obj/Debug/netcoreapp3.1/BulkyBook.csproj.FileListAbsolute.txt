@@ -252,3 +252,5 @@ E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\bin
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\BulkyBook.csproj.CoreCompileInputs.cache
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\BulkyBook.MvcApplicationPartsAssemblyInfo.cs
 E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\BulkyBook.MvcApplicationPartsAssemblyInfo.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\UserName\Default.cshtml.g.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Notifications.cshtml.g.cs
