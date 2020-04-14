@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwPE/MJ/jCEqGnX15z2LAmAAAAAACAAAAAAAQZgAAAAEAACAAAACiVbiAGnJMPWjQ96kvPXhq91IZKL4KS/lvWiQyd6JLiwAAAAAOgAAAAAIAACAAAAByCcmG573GKZvOu2s9/Vq1xrs7XrdfyzdlrhabL4PIUIAAAADglggKjmgGgj+vtDY4b0aFwa83hpcaMKrFe28MSgf8vF3i26X3rBM0AouLZ9+jXAauKoywrL2Lg/rx+e4z2zGpCTkwlX+3trFwiSq3mOrrtTIyuGN9zylkE1f3xxmjCnqks3R9R0NS4pcG0E4975S35QsCeFa7R40Dv9vWMPgjDEAAAABhBb8hY7WQhdGDKhj19eC5CqoBFsQvKC92nJ9kzsl2cFGAN6UcVH2JIcMmuXf4wyCNDucwfS6pnJeUnfLNgrpd</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:bulkybook20200414085655dbserver.database.windows.net,1433%3bInitial Catalog=VazhaBookStore_db%3bUser Id=adminuser%40bulkybook20200414085655dbserver%3bPassword=Admin123%2a</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

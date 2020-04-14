@@ -1,0 +1,77 @@
+﻿
+var dataTable;
+
+$(document).ready(function () {
+    loadDataTable();
+});
+
+function loadDataTable() {
+    dataTable = $("#tblData").DataTable({
+
+        "ajax": {
+            "url": "/Admin/Company/GetAll"
+        },
+        "columns": [
+            { "data": "name", "width": "15%" },
+            { "data": "streetAddress", "width": "15%" },
+            { "data": "city", "width": "10%" },
+            { "data": "state", "width": "10%" },
+            { "data": "phoneNumber", "width": "15%" },
+            {
+                "data": "isAuthorizedCompany",
+                "render": function (data) {
+                    if (data) {
+                        return `<input type="checkbox" disabled checked style="margin-left:auto;"/>`
+                    }
+                    else {
+                        return `<input type="checkbox" disabled/>`
+                    }
+                },
+                "width": "10%",
+            },
+            {
+                "data": "id",
+                "render": function (data) {
+                    return `
+                        <div class="text-center">
+                            <a href="/Admin/Company/Upsert/${data}" class="btn btn-primary" style="cursor:pointer;"><i class="fas fa-edit"></i></a>
+                            <a onclick=Delete("/Admin/Company/Delete/${data}") class="btn btn-danger" style="cursor:pointer;"><i class="fas fa-trash"></i></a
+                        </div>
+                    `;
+                }, "width": "25%"
+            }
+        ],
+        createdRow: function (row) {
+
+            $(row).addClass('bg-dark');
+        }
+
+    });
+}
+
+function Delete(url) {
+    swal({
+        title: "Are you sure you want to delete?",
+        text: "You will not be able to restore the data!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete) => {
+        if (willDelete) {
+            $.ajax({
+
+                type: "DELETE",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        dataTable.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+                }
+            });
+        }
+    });
+}

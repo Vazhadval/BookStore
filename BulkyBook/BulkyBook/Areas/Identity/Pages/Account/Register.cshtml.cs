@@ -140,22 +140,6 @@ namespace BulkyBook.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    if (!await _roleManager.RoleExistsAsync(Constants.Role_Admin))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.Role_Admin));
-                    }
-                    if (!await _roleManager.RoleExistsAsync(Constants.Role_Employee))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.Role_Employee));
-                    }
-                    if (!await _roleManager.RoleExistsAsync(Constants.Role_User_Comp))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.Role_User_Comp));
-                    }
-                    if (!await _roleManager.RoleExistsAsync(Constants.Role_User_Indi))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.Role_User_Indi));
-                    }
 
                     if (user.Role == null)
                     {

@@ -1,0 +1,9 @@
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\bin\Release\netcoreapp3.1\BulkyBook.Utility.deps.json
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\bin\Release\netcoreapp3.1\BulkyBook.Utility.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\bin\Release\netcoreapp3.1\BulkyBook.Utility.pdb
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Release\netcoreapp3.1\BulkyBook.Utility.csprojAssemblyReference.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Release\netcoreapp3.1\BulkyBook.Utility.csproj.CoreCompileInputs.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Release\netcoreapp3.1\BulkyBook.Utility.AssemblyInfoInputs.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Release\netcoreapp3.1\BulkyBook.Utility.AssemblyInfo.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Release\netcoreapp3.1\BulkyBook.Utility.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BulkyBook.Utility\obj\Release\netcoreapp3.1\BulkyBook.Utility.pdb

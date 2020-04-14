@@ -1,0 +1,14 @@
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Release\netcoreapp3.1\BulkyBook.DataAccess.deps.json
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Release\netcoreapp3.1\BulkyBook.DataAccess.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Release\netcoreapp3.1\BulkyBook.DataAccess.pdb
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Release\netcoreapp3.1\BulkyBook.Models.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Release\netcoreapp3.1\BulkyBook.Utility.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Release\netcoreapp3.1\BulkyBook.Models.pdb
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\bin\Release\netcoreapp3.1\BulkyBook.Utility.pdb
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Release\netcoreapp3.1\BulkyBook.DataAccess.csprojAssemblyReference.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Release\netcoreapp3.1\BulkyBook.DataAccess.csproj.CoreCompileInputs.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Release\netcoreapp3.1\BulkyBook.DataAccess.AssemblyInfoInputs.cache
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Release\netcoreapp3.1\BulkyBook.DataAccess.AssemblyInfo.cs
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Release\netcoreapp3.1\BulkyBook.DataAccess.csproj.CopyComplete
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Release\netcoreapp3.1\BulkyBook.DataAccess.dll
+E:\Projects\C# Projects\Udemy .net core course\BookStore\BulkyBook\BilkyBook.DataAccess\obj\Release\netcoreapp3.1\BulkyBook.DataAccess.pdb
